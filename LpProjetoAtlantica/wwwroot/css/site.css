@@ -1,22 +1,363 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.bg-orange {
+    background-color: orangered;
+}
+
+.bg-purple {
+    background-color: rebeccapurple;
+}
+
+.text-orange {
+    color: orangered;
+}
+
+.skills .content h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #37517e;
+    font-family: "Poppins", sans-serif;
+}
+
+.skills .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+    .skills .content ul li {
+        padding-bottom: 10px;
+    }
+
+    .skills .content ul i {
+        font-size: 20px;
+        padding-right: 4px;
+        color: #47b2e4;
+    }
+
+.skills .content p:last-child {
+    margin-bottom: 0;
+}
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+    .skills .progress .skill {
+        padding: 0;
+        margin: 0 0 6px 0;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #37517e;
+    }
+
+        .skills .progress .skill .val {
+            float: right;
+            font-style: normal;
+        }
+
+.skills .progress-bar-wrap {
+    background: #e8edf5;
+    height: 10px;
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #4668a2;
+}
+
+#hero {
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 80%;
+}
+
+    #hero .container {
+        padding-top: 100px;
+    }
+
+    #hero h1 {
+        margin: 0 0 10px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #fff;
+    }
+
+    #hero h2 {
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+
+    #hero .btn-get-started {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 10px 28px 11px 28px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px 0 0 0;
+        color: #fff;
+        background: #47b2e4;
+    }
+
+        #hero .btn-get-started:hover {
+            background: #209dd8;
+        }
+
+
+    #hero .animated {
+        animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    }
+
+@media (max-width: 991px) {
+    #hero {
+        height: 100vh;
+        text-align: center;
+    }
+
+        #hero .animated {
+            animation: none;
+        }
+
+        #hero .hero-img {
+            text-align: center;
+        }
+
+            #hero .hero-img img {
+                width: 50%;
+            }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    #hero .hero-img img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero .hero-img img {
+        width: 80%;
+    }
+
+    #hero .btn-get-started {
+        font-size: 16px;
+        padding: 10px 24px 11px 24px;
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.services .icon-box {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+}
+
+    .services .icon-box .icon {
+        margin-bottom: 10px;
+    }
+
+        .services .icon-box .icon i {
+            color: #47b2e4;
+            font-size: 36px;
+            transition: 0.3s;
+        }
+
+    .services .icon-box h4 {
+        font-weight: 500;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+        .services .icon-box h4 a {
+            color: #37517e;
+            transition: ease-in-out 0.3s;
+        }
+
+    .services .icon-box p {
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .services .icon-box:hover {
+        transform: translateY(-10px);
+    }
+
+        .services .icon-box:hover h4 a {
+            color: #47b2e4;
+        }
+
+.section-bg {
+    padding: 60px 100px 0 100px;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #37517e;
+    }
+
+        .section-title h2::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: #ddd;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: #47b2e4;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+
+    .section-title p {
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    .section-title h1 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #37517e;
+    }
+
+.page-section {
+    padding: 8rem 0;
+}
+
+#projeto {
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 80%;
+}
+
+    #projeto .container {
+        padding-top: 100px;
+    }
+
+#whatsapp {
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 80%;
+}
+
+    #whatsapp .container {
+        padding-top: 100px;
+    }
+
+.text-aqua {
+    color: deepskyblue;
+    font-family: "Jost", sans-serif;
+}
+
+#contato {
+}
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 50%), url("../imgs/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+    header.masthead h1, header.masthead .h1 {
+        font-size: 2.25rem;
+    }
+
+@media (min-width: 992px) {
+    header.masthead {
+        height: 100vh;
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
+
+        header.masthead p {
+            font-size: 1.15rem;
+        }
+
+        header.masthead h1, header.masthead .h1 {
+            font-size: 3rem;
+        }
+}
+
+@media (min-width: 1200px) {
+    header.masthead h1, header.masthead .h1 {
+        font-size: 3.5rem;
+    }
 }
