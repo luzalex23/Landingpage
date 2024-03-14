@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/LpProjetoAtlantica.styles.css" asp-append-version="true" />
+    <meta name="description" content="NaturalmenteSucesso - Especializados em produtos naturais e Mudar vida através do mercado digital. Liberdade Financeira, Protagonize sua História.">
+    <meta name="keywords" content="NaturalmenteSucesso, Marketing de Afiliados, Liberdade Finaceira, Empreendorismo, Produtos naturais, Investimentos, DroppShip, Negócio proprio, Loja Virtual, Atlantica Natuaral, Sharks,Ozonioterapia, Dengue">
+
 </head>
-<body class="bg-dark">
+<body class="bg-white">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container">
-            <a class="navbar-brand">SEJA UM SHARK!</a>
+            <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="/imgs/anaturalremovebg.png" alt="logo image" /></a>
             <div class="collapse navbar-collapse justify-content-end">
-                <a class="nav-link text-aqua" asp-area="" asp-page="/Index">Home <i class="bi bi-house-door"></i></a>
-                <a class="nav-link text-aqua" asp-area="" asp-page="/Contato">Contato <i class="bi bi-person-lines-fill"></i></a>
+                <a class="btn-get-started scrollto nav-link text-aqua navbar-shrink" asp-area="" asp-page="/Contato">Contato <i class="bi bi-person-lines-fill"></i></a>
+
             </div>
         </div>
     </nav>
@@ -22,7 +25,7 @@
         <div class="container px-4 px-lg-5 h-100 text-white">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">Quanto custa sua liberdade</h1>
+                    <h1 class="text-white font-weight-bold">Quanto custa a sua liberdade?</h1>
                     <hr class="divider" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
@@ -39,14 +42,23 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Seja Um Shark -
+            &copy; 2024 - Seja Um Shark - <a asp-area="" asp-page="/Contato">Contato <i class="bi bi-shield-lock"></i></a>
+
         </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N0MYHMHDEQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-N0MYHMHDEQ');
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

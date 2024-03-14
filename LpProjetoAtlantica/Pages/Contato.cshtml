@@ -1,0 +1,87 @@
+﻿@page
+@model LpProjetoAtlantica.Pages.ContatoModel
+@{
+    ViewData["Title"] = "Entre em Contato";
+
+}
+<h1 id="whatsapp" class="display-2 text-center mt-5 text-white">Entre em Contato</h1>
+<hr class="divider bg-orange" />
+
+<section id="whatsapp" class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="display-4 text-capitalize text-orange mb-4">Entre em nossa comunidade no Whatsapp</h2>
+        <p class="lead mb-4">Fique por dentro de todos eventos e novidades na palma de sua mão além de estar em contato direto com quem sabe fazer negócio.</p>
+
+        <a href="https://chat.whatsapp.com/GcJusZuAPNtGIjwI6l0MAN" target="_blank" class="btn btn-success btn-lg rounded-pill">
+            Faça parte do Crescimento
+            <i class="fab fa-whatsapp ms-2"></i>
+        </a>
+    </div>
+</section>
+<hr class="divider bg-orange" />
+
+@* <section id="projeto" class="bg-dark text-white py-5">
+   @*  <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="display-4 fw-bold">Assine nossa newsletter</h2>
+                <p class="lead">Aproveite o formulário abaixo para nos enviar uma mensagem. Estamos ansiosos para ouvir como se sente!</p>
+            </div>
+        </div>
+
+        <form method="post" class="needs-validation row g-3 mt-4" novalidate>
+            @if (!ModelState.IsValid)
+            {
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach (var modelState in ModelState.Values)
+                        {
+                            foreach (var error in modelState.Errors)
+                            {
+                                <li>@error.ErrorMessage</li>
+                            }
+                        }
+                    </ul>
+                </div>
+            }
+
+            <div class="col-md-6">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" id="nome" name="Nome" class="form-control" required>
+                <div class="invalid-feedback">Por favor, insira um nome.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email:</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="email" name="Email" class="form-control" required>
+                    <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+            </div>
+        </form>
+    </div> 
+</section>*@
+ 
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+        });
+    </script>
+}
